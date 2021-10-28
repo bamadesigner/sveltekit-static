@@ -3,3 +3,4 @@ node_modules
 /build
 /.svelte-kit
 /package
+src/lib/css/dist.css

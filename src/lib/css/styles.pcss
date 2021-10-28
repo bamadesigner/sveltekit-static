@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body,
+	html {
+		font-family: sans-serif;
+		font-size: 104%;
+		line-height: 2;
+		font-weight: 400;
+		min-height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* Tailwind removes this because who knows */
+	a {
+		@apply underline;
+		@apply text-blue-800;
+	}
+
+	/* Have to keep unnested for purge to work. */
+	a:hover,
+	a:focus {
+		@apply text-yellow-800;
+	}
+
+	/* Tailwind removes list styles and margin for some reason */
+	ol,
+	ul {
+		@apply list-outside;
+		@apply ml-8;
+	}
+
+	ol {
+		@apply list-decimal;
+	}
+
+	ul {
+		@apply list-disc;
+	}
+}
