@@ -22,6 +22,7 @@ const config = {
 		})
 	},
 	hydrate: false,
+	floc: true,
 };
 
 export default config;
