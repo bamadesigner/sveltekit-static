@@ -1,4 +1,4 @@
-# SvelteKit Static Template
+# SvelteKit Static Template with Tailwind
 
 This repo is a template created from the "out of the box" SvelteKit "skeleton project".
 
