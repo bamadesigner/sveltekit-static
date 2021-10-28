@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-template",
+	"name": "sveltekit-static",
 	"version": "0.0.1",
 	"description": "SvelteKit app with static adapter and Tailwind",
 	"type": "module",
