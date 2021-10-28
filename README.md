@@ -19,8 +19,27 @@ Here's how to setup your SvelteKit static app:
 3. Open the repo directory on your local computer inside the command line.
 4. Run `yarn install` on the command line to download the dependencies.
    - Learn [how to install Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
-5. Run `yarn dev` on the command line to start working on your site!
+
+## Developing your app/website
+
+To get started developing your app:
+
+1. Run `yarn dev` on the command line to start working on your site!
    - Run `yarn run dev -- --open` instead to open the website in a new browser tab
+
+### Using TailwindCSS
+
+When you run `yarn dev`, two things are happening: Svelte is doing its thing and TailwindCSS is doing its thing.
+
+Per the beauty of Svelte, you will want to keep your CSS isolated inside your Svelte files as much as possible.
+
+You can still use Tailwind techniques inside your Svelte files. Check out [\_\_layout.svelte](./src/routes/__layout.svelte#L12) for an example.
+
+For "global" CSS, open the `/src/lib/css/styles.pcss" to manage your global CSS via "the Tailwind way".
+
+If you are unfamiliar with Tailwind, [visit the Tailwind documentation](https://tailwindcss.com/docs/) for more information.
+
+When you are in development mode, your app's webpages will automatically update in the browser per the SvelteKit HMR. And when you build your website files, your CSS will be purged of unused CSS and minifed for production.
 
 ## Building your static website
 
