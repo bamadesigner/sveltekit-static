@@ -1,17 +1,6 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
-<script lang="ts">
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
-</script>
-
 <svelte:head>
-	<title>Best website ever</title>
+	<title>Something is wrong</title>
 </svelte:head>
-
-<Header />
 
 <main id="main" class="flex justify-center w-full mx-auto px-8 py-12">
 	<div
@@ -19,13 +8,15 @@
 	>
 		<div class="flex flex-col gap-2">
 			<h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl m-0">
-				Welcome to SvelteKit
+				Something is wrong.
 			</h1>
-			<p class="text-lg text-gray-600">
-				Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation.
+			<p class="text-xl font-semibold text-gray-600 m-0">
+				Oh no! We're sorry for the interruption.
+			</p>
+			<p class="text-lg text-gray-600 m-0 mt-4">
+				We're looking into the matter. The site should be up and running shortly. Please refresh the
+				page often.
 			</p>
 		</div>
 	</div>
 </main>
-
-<Footer />
