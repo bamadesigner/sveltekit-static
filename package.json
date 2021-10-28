@@ -1,6 +1,7 @@
 {
 	"name": "sveltekit-template",
 	"version": "0.0.1",
+	"description": "SvelteKit app with static adapter and Tailwind",
 	"type": "module",
 	"scripts": {
 		"dev:only": "svelte-kit dev",
@@ -18,6 +19,14 @@
 		"css:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss ./src/lib/css/styles.pcss -o ./src/lib/css/dist.css -w",
 		"css:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss ./src/lib/css/styles.pcss -o ./src/lib/css/dist.css"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bamadesigner/sveltekit-static.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bamadesigner/sveltekit-static/issues"
+	},
+	"homepage": "https://github.com/bamadesigner/sveltekit-static#readme",
 	"engines": {
 		"node": "16.12.0"
 	},
