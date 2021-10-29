@@ -33,13 +33,13 @@ When you run `yarn dev`, two things are happening: Svelte is doing its thing and
 
 Per the beauty of Svelte, you will want to keep your CSS isolated inside your Svelte files as much as possible.
 
-You can still use Tailwind techniques inside your Svelte files. Check out [\_\_layout.svelte](./src/routes/__layout.svelte#L12) for an example.
+You can still use Tailwind techniques inside your Svelte files. Check out [./src/routes/\_\_layout.svelte](./src/routes/__layout.svelte#L12) for an example.
 
-For "global" CSS, open the `/src/lib/css/styles.pcss" to manage your global CSS via "the Tailwind way".
+For "global" CSS, open [/src/lib/css/styles.pcss](./src/lib/css/styles.pcss) to manage your global CSS via "the Tailwind way".
 
 If you are unfamiliar with Tailwind, [visit the Tailwind documentation](https://tailwindcss.com/docs/) for more information.
 
-When you are in development mode, your app's webpages will automatically update in the browser per the SvelteKit HMR. And when you build your website files, your CSS will be purged of unused CSS and minifed for production.
+When you are in development mode and edit your CSS, your app's webpages will automatically update in the browser per the SvelteKit HMR. And when you build your website files, your CSS will be purged of unused CSS and minifed for production.
 
 ## Building your static website
 
