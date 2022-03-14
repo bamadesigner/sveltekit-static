@@ -11,8 +11,8 @@
 <script lang="ts">
 	import Header from "$lib/Header.svelte";
 	import Footer from "$lib/Footer.svelte";
-	import FourHundredFour from "$lib/404.svelte";
-	import FiveHundred from "$lib/500.svelte";
+	import FourHundredFour from "$lib/pages/404.svelte";
+	import FiveHundred from "$lib/pages/500.svelte";
 	export let status: number;
 </script>
 
