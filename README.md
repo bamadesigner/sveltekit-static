@@ -17,8 +17,10 @@ Here's how to setup your SvelteKit static app:
 2. Git clone this repo onto your local computer.
    - Learn [how to git clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 3. Open the repo directory on your local computer inside the command line.
-4. Run `yarn install` on the command line to download the dependencies.
-   - Learn [how to install Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
+4. Run `nvm use` to make sure you have the correction version of Node.js installed.
+   - Learn [how to install Node.js](https://nodejs.dev/learn/how-to-install-nodejs).
+5. Run `yarn install` on the command line to download the dependencies.
+   - Learn [how to install Yarn](https://classic.yarnpkg.com/lang/en/docs/install/).
 
 ## Developing your app/website
 
