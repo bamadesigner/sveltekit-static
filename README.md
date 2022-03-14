@@ -25,7 +25,6 @@ Here's how to setup your SvelteKit static app:
 To get started developing your app:
 
 1. Run `yarn run dev` on the command line to start working on your site!
-   - Run `yarn run dev -- --open` instead to open the website in a new browser tab
 
 ### Using TailwindCSS
 
@@ -33,7 +32,7 @@ When you run `yarn run dev`, two things are happening: Svelte is doing its thing
 
 Per the beauty of Svelte, you will want to keep your CSS isolated inside your Svelte files as much as possible.
 
-You can still use Tailwind techniques inside your Svelte files. Check out [./src/routes/\_\_layout.svelte](./src/routes/__layout.svelte#L12) for an example.
+You can still use Tailwind techniques inside your Svelte files. Check out [./src/lib/Header.svelte](./src/lib/Header.svelte#L8) for an example.
 
 For "global" CSS, open [/src/lib/css/styles.pcss](./src/lib/css/styles.pcss) to manage your global CSS via "the Tailwind way".
 
@@ -49,6 +48,16 @@ To build the directory and files:
 
 1. Return to the command line.
 2. Run `yarn run build` in the command line.
+
+### Managing your app config
+
+You are encouraged to check out [SvelteKit's page options](https://kit.svelte.dev/docs/page-options). "router", "hydrate", and "prerender" are important to explore and manage for customizing any Svelte app, especially a static app.
+
+By default, I have it set to `router: false`, `hydrate: false`, and `prerender: false` to support a truly static HTML experience.
+
+If I needed to add some JavaScript functionality, I would set `hydrate: true`. If I wanted to enable client-side routing, I would set `router: true`.
+
+Setting `prerender: true` allows for a truly static app as it renders all necessary HTML as it builds your files. If you need dynamic rendering for any pages within your app, odds are you need to change your Svelte app to a [non-static adapter](https://kit.svelte.dev/docs/adapters).
 
 ## Previewing your static website
 
