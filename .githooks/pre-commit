@@ -1,5 +1,5 @@
 #!/bin/sh
 # Place this file inside .githooks directory.
-# Make sure the file is executable: Run `chmod +x pre-comment`.
+# Make sure the file is executable: Run `chmod +x pre-commit`.
 # Run `git config core.hooksPath .githooks`.
-npx stylelint "./src/lib/css/**/*.pcss"
+yarn run lint

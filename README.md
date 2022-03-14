@@ -24,12 +24,12 @@ Here's how to setup your SvelteKit static app:
 
 To get started developing your app:
 
-1. Run `yarn dev` on the command line to start working on your site!
+1. Run `yarn run dev` on the command line to start working on your site!
    - Run `yarn run dev -- --open` instead to open the website in a new browser tab
 
 ### Using TailwindCSS
 
-When you run `yarn dev`, two things are happening: Svelte is doing its thing and TailwindCSS is doing its thing.
+When you run `yarn run dev`, two things are happening: Svelte is doing its thing and TailwindCSS is doing its thing.
 
 Per the beauty of Svelte, you will want to keep your CSS isolated inside your Svelte files as much as possible.
 

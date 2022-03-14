@@ -3,4 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
-src/lib/css/dist.css
+.env
+.env.*
+!.env.example
+.output

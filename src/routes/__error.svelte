@@ -2,17 +2,17 @@
 	export function load({ status }) {
 		return {
 			props: {
-				status
-			}
+				status,
+			},
 		};
 	}
 </script>
 
 <script lang="ts">
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import FourHundredFour from '$lib/404.svelte';
-	import FiveHundred from '$lib/500.svelte';
+	import Header from "$lib/Header.svelte";
+	import Footer from "$lib/Footer.svelte";
+	import FourHundredFour from "$lib/404.svelte";
+	import FiveHundred from "$lib/500.svelte";
 	export let status: number;
 </script>
 

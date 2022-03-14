@@ -5,24 +5,23 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess(
-		{
-			postcss: true,
-			typescript: true,
-		}
-	),
+	preprocess: preprocess({
+		postcss: true,
+		typescript: true,
+	}),
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: "#svelte",
 		adapter: adapter({
-			// default options are shown
-			pages: "build",
-			assets: "build",
 			fallback: "404.html",
-		})
+		}),
+		browser: {
+			hydrate: false,
+			router: false,
+		},
+		prerender: {
+			default: true,
+		},
+		floc: true,
 	},
-	hydrate: false,
-	floc: true,
 };
 
 export default config;

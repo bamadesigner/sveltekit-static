@@ -3,14 +3,19 @@
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
+		"source.fixAll.eslint": true,
+		"source.fixAll.prettier": true,
+		"source.fixAll.stylelint": true
 	},
 	"editor.formatOnSave": true,
+	"prettier.tabWidth": 4,
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
-	"eslint.validate": [
-		"javascript",
-		"typescript",
-	]
+	"eslint.validate": ["javascript", "typescript"]
 }
