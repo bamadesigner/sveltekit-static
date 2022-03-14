@@ -1,7 +1,9 @@
 <script context="module" lang="ts">
 	export const prerender = true;
-	export const hydrate = false;
 	export const router = false;
+
+	// When false, hot reloading does not work in dev
+	// export const hydrate = false;
 </script>
 
 <script lang="ts">

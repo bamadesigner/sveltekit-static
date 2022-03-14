@@ -53,6 +53,8 @@ To build the directory and files:
 
 You are encouraged to check out [SvelteKit's page options](https://kit.svelte.dev/docs/page-options). "router", "hydrate", and "prerender" are important to explore and manage for customizing any Svelte app, especially a static app.
 
+**Possible bug:** If hydrate is false, "hot reloading" will not work in dev.
+
 By default, I have it set to `router: false`, `hydrate: false`, and `prerender: false` to support a truly static HTML experience.
 
 If I needed to add some JavaScript functionality, I would set `hydrate: true`. If I wanted to enable client-side routing, I would set `router: true`.
